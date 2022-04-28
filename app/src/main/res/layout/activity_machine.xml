@@ -1,0 +1,95 @@
+<LinearLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              tools:context=".MainActivity">
+    <TextView
+            android:layout_marginTop="120dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_height="wrap_content"
+            android:text="GESTION DES MACHINES"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salle :"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Spinner"
+            android:textColor="#000000">
+    </Spinner>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marque :"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+    />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/marque"
+    />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reference :"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+    />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reference"
+    />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/purple_500"
+                android:text="Ajouter"
+                android:id="@+id/btnCreate"/>
+
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/purple_500"
+                android:text="Liste des Machines"
+                android:id="@+id/btnListeMachines"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
